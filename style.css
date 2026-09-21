@@ -1,0 +1,40 @@
+:root {
+  color-scheme: light dark;
+  --fg: #1a1a1a;
+  --muted: #555;
+  --bg: #f7f5f2;
+  --card: #fff;
+  --link: #0b5fff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #f2f2f2;
+    --muted: #aaa;
+    --bg: #121212;
+    --card: #1c1c1c;
+    --link: #8ab4ff;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+  line-height: 1.65;
+  background: var(--bg);
+  color: var(--fg);
+}
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  background: var(--card);
+  min-height: 100vh;
+}
+h1 { font-size: 1.45rem; margin: 0 0 0.5rem; }
+h2 { font-size: 1.1rem; margin: 1.6rem 0 0.5rem; }
+.meta, .disclaimer, .nav { color: var(--muted); font-size: 0.92rem; }
+.nav { margin: 0 0 1.25rem; }
+a { color: var(--link); }
+ul { padding-left: 1.2rem; }
+.links { list-style: none; padding: 0; }
+.links li { margin: 0.75rem 0; }
